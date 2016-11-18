@@ -10,14 +10,17 @@ import {RegistrationComponent} from './components/registration/registration.comp
 import {LoginComponent} from './components/Login/Login.component';
 import {GamesListComponent} from './components/GamesList/GamesList.component';
 import {GameDescriptionComponent} from './components/GameDescription/GameDescription.component';
+import {TabsComponent} from './components/tabs/tabs.component';
 //modules
 import {HomeModule} from './modules/Home/Home.module';
 import {AboutUsModule} from './modules/AboutUs/AboutUs.module';
 import {LoginModule} from './modules/Login/Login.module';
 import {GamesModule} from './modules/Games/Games.module';
+import {TutorialsModule} from './modules/Tutorials/Tutorials.module';
 //services
 import {PropertyGetter} from './services/methods/PropertyGetter.method';
 import {Routes} from './services/properties/Routings.properties';
+
 
 
 
@@ -37,11 +40,13 @@ import {Routes} from './services/properties/Routings.properties';
     LoginComponent,
     GamesListComponent,
     GameDescriptionComponent,
+    TabsComponent,
     /*Modules*/
     HomeModule,
     AboutUsModule,
     LoginModule,
-    GamesModule
+    GamesModule,
+    TutorialsModule
   ],
   providers: [
      PropertyGetter

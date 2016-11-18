@@ -20,11 +20,13 @@ var registration_component_1 = require('./components/registration/registration.c
 var Login_component_1 = require('./components/Login/Login.component');
 var GamesList_component_1 = require('./components/GamesList/GamesList.component');
 var GameDescription_component_1 = require('./components/GameDescription/GameDescription.component');
+var tabs_component_1 = require('./components/tabs/tabs.component');
 //modules
 var Home_module_1 = require('./modules/Home/Home.module');
 var AboutUs_module_1 = require('./modules/AboutUs/AboutUs.module');
 var Login_module_1 = require('./modules/Login/Login.module');
 var Games_module_1 = require('./modules/Games/Games.module');
+var Tutorials_module_1 = require('./modules/Tutorials/Tutorials.module');
 //services
 var PropertyGetter_method_1 = require('./services/methods/PropertyGetter.method');
 var Routings_properties_1 = require('./services/properties/Routings.properties');
@@ -48,11 +50,13 @@ var AppModule = (function () {
                 Login_component_1.LoginComponent,
                 GamesList_component_1.GamesListComponent,
                 GameDescription_component_1.GameDescriptionComponent,
+                tabs_component_1.TabsComponent,
                 /*Modules*/
                 Home_module_1.HomeModule,
                 AboutUs_module_1.AboutUsModule,
                 Login_module_1.LoginModule,
-                Games_module_1.GamesModule
+                Games_module_1.GamesModule,
+                Tutorials_module_1.TutorialsModule
             ],
             providers: [
                 PropertyGetter_method_1.PropertyGetter
