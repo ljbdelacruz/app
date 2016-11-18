@@ -1,0 +1,15 @@
+<div>
+    <table>
+        <tr>
+            <td>
+                <h1 style="margin-right:100px;">FISH HAX</h1>
+            </td>
+            <td *ngFor="let nav of navItems">
+                <a routerLink="{{nav.link}}" style="margin-right: 50px;">{{nav.label}}</a>
+            </td>
+            <td>
+                <login-component></login-component>
+            </td>
+        </tr>
+    </table>
+</div>
