@@ -1,8 +1,8 @@
 <div>
     <h1>This Is Games List</h1>
     <table>
-        <tr>
-            <td *ngFor="let game of games">
+        <tr *ngFor="let game of games">
+            <td>
                 <a (click)="OnSelectGame(game)">{{game.title}}</a>
             </td>
         </tr>
