@@ -9,13 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var NavItems_properties_1 = require('./../properties/NavItems.properties');
+var datas_data_1 = require('./../../services/data/datas.data');
 //this method service is for getting data from service properties
 var PropertyGetter = (function () {
     function PropertyGetter() {
     }
     PropertyGetter.prototype.getNavItems = function () {
-        return NavItems_properties_1.NavItems;
+        return datas_data_1.navItems;
+    };
+    PropertyGetter.prototype.getTabs = function () {
+        return datas_data_1.tabsTutorial;
+    };
+    //game datas
+    PropertyGetter.prototype.getPSVGames = function () {
+        return datas_data_1.psv;
+    };
+    PropertyGetter.prototype.getPSPGames = function () {
+        return datas_data_1.psp;
+    };
+    PropertyGetter.prototype.get3DSGames = function () {
+        return datas_data_1.t3dsGames;
+    };
+    PropertyGetter.prototype.getConsoleGames = function () {
+        return datas_data_1.platform;
     };
     PropertyGetter = __decorate([
         core_1.Injectable(), 

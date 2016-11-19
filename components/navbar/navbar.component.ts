@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {NavigationItem} from './../../objects/NavigationItems';
+import {NavigationItem} from './../../objects/class.object';
 
 @Component({
   selector: 'navbar',

@@ -1,6 +1,6 @@
 import { Component, Input,  Output, EventEmitter } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {Games} from './../../objects/Games.object';
+import {Games} from './../../objects/class.object';
 import myGlobal = require('./../../services/properties/globals.properties');
 
 

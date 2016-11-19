@@ -10,20 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var gameList = require('./../../services/data/GamesList.data');
+var PropertyGetter_method_1 = require('./../../services/methods/PropertyGetter.method');
 var myGlobal = require('./../../services/properties/globals.properties');
 var GamesModule = (function () {
-    function GamesModule(route) {
-        this.games = [{ cat: gameList.psv, option: 1, title: 'PS VITA GAMES' },
-            { cat: gameList.t3dsGames, option: 2, title: '3DS GAMES' },
-            { cat: gameList.psp, option: 3, title: 'PSP GAMES' }];
-        this.optionTabs = [{ title: 'PS VITA', option: 1 },
-            { title: '3DS', option: 2 },
-            { title: 'PSP', option: 3 }];
+    function GamesModule(route, propertyGetter) {
+        this.propertyGetter = propertyGetter;
+        this.games = null;
         this.selectedOption = 1;
         this.game = myGlobal.selectedGame;
         this.router = route;
         this.CheckIsLogin();
+        this.games = propertyGetter.getConsoleGames();
     }
     GamesModule.prototype.OnTabSelect = function (option) {
         this.selectedOption = option;
@@ -43,7 +40,7 @@ var GamesModule = (function () {
             selector: 'games-module',
             templateUrl: 'app/modules/Games/Games.html'
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [router_1.Router, PropertyGetter_method_1.PropertyGetter])
     ], GamesModule);
     return GamesModule;
 }());

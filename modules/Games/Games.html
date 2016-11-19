@@ -4,17 +4,17 @@
             <td>
                 <table>
                     <tr>
-                        <td *ngFor="let tab of optionTabs" style="padding:0 15px 0 15px;">
-                            <a (click)="OnTabSelect(tab.option)">{{tab.title}}</a>
+                        <td *ngFor="let tab of games" style="padding:0 15px 0 15px;">
+                            <a (click)="OnTabSelect(tab.options)">{{tab.title}}</a>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
         <tr *ngFor="let game of games">
-            <td *ngIf="selectedOption==game.option">
+            <td *ngIf="selectedOption==game.options">
                 <h1>{{game.title}}</h1>
-                <gameslist-component [games]="game.cat" (event)="ShowGameDescription()"></gameslist-component>
+                <gameslist-component [games]="game.games" (event)="ShowGameDescription()"></gameslist-component>
             </td>
         </tr>
         <tr>

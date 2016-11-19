@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Games_object_1 = require('./../../objects/Games.object');
+var class_object_1 = require('./../../objects/class.object');
 var myGlobal = require('./../../services/properties/globals.properties');
 var GameDescriptionComponent = (function () {
     function GameDescriptionComponent() {
@@ -20,7 +20,7 @@ var GameDescriptionComponent = (function () {
     };
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', Games_object_1.Games)
+        __metadata('design:type', class_object_1.Games)
     ], GameDescriptionComponent.prototype, "game", void 0);
     GameDescriptionComponent = __decorate([
         core_1.Component({

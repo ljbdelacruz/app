@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterModule,  Router, ActivatedRoute, Params} from '@angular/router';
-import {Games} from './../../objects/Games.object';
-import gameList = require('./../../services/data/GamesList.data');
+import {Games, Consoles} from './../../objects/class.object';
+import {PropertyGetter} from './../../services/methods/PropertyGetter.method';
 import myGlobal = require('./../../services/properties/globals.properties');
 
 @Component({
@@ -10,18 +10,14 @@ import myGlobal = require('./../../services/properties/globals.properties');
 })
 export class GamesModule {
     private router:Router; 
-
-    constructor(route : Router){
+    games:Consoles[]=null;
+    selectedOption=1;
+    
+    constructor(route : Router, private propertyGetter: PropertyGetter){
         this.router=route;
         this.CheckIsLogin();
+        this.games=propertyGetter.getConsoleGames();
     }
-    games=[{cat:gameList.psv, option:1, title:'PS VITA GAMES'},
-           {cat:gameList.t3dsGames, option:2, title:'3DS GAMES'},
-           {cat:gameList.psp, option:3, title:'PSP GAMES'}];
-    optionTabs=[{title:'PS VITA', option:1}, 
-                {title:'3DS', option:2},
-                {title:'PSP', option:3}];
-    selectedOption=1;
     OnTabSelect(option):void{
         this.selectedOption=option;
     }
