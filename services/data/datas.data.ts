@@ -23,4 +23,5 @@ export const tabsTutorial:Tabs[]=
 //navigation item data
 export const navItems:NavigationItem[]=
 [{id:1, label:'Home', link:'/home'},
- {id:2, label:'About', link:'/aboutus'}];
+ {id:2, label:'About', link:'/aboutus'},
+ {id:2, label:'Tutorials', link:'/tutorials'}];

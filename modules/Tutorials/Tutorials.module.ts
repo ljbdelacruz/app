@@ -7,13 +7,15 @@ import {RouterModule,  Router, ActivatedRoute, Params} from '@angular/router';
 })
 export class TutorialsModule {
     private router:Router; 
+    selectedOption:number=1;
     constructor(route : Router){
         this.RequestHttpData();
     }
     RequestHttpData():void{
+        alert("Welcome Tutorial");
     }
-
-
-
+    ChangeOption(option:number):void{
+        this.selectedOption=option;
+    }
 }
 

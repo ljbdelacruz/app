@@ -12,9 +12,14 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var TutorialsModule = (function () {
     function TutorialsModule(route) {
+        this.selectedOption = 1;
         this.RequestHttpData();
     }
     TutorialsModule.prototype.RequestHttpData = function () {
+        alert("Welcome Tutorial");
+    };
+    TutorialsModule.prototype.ChangeOption = function (option) {
+        this.selectedOption = option;
     };
     TutorialsModule = __decorate([
         core_1.Component({

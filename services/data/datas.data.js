@@ -16,5 +16,6 @@ exports.tabsTutorial = [{ id: 1, title: 'PSP', link: 'psp', options: 1 },
     { id: 3, title: '3DS', link: '3ds', options: 3 }];
 //navigation item data
 exports.navItems = [{ id: 1, label: 'Home', link: '/home' },
-    { id: 2, label: 'About', link: '/aboutus' }];
+    { id: 2, label: 'About', link: '/aboutus' },
+    { id: 2, label: 'Tutorials', link: '/tutorials' }];
 //# sourceMappingURL=datas.data.js.map
