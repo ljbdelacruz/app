@@ -9,29 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var TabsComponent = (function () {
-    function TabsComponent() {
-        this.selectedTabs = new core_1.EventEmitter();
+var FooterComponent = (function () {
+    function FooterComponent() {
     }
-    TabsComponent.prototype.onSelectTabs = function (option) {
-        this.selectedTabs.emit(option);
-    };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Array)
-    ], TabsComponent.prototype, "tabs", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], TabsComponent.prototype, "selectedTabs", void 0);
-    TabsComponent = __decorate([
+    FooterComponent = __decorate([
         core_1.Component({
-            selector: 'tabs-component',
-            templateUrl: 'app/components/tabs/tabs.html'
+            selector: 'footer-component',
+            templateUrl: 'app/components/footer/footer.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], TabsComponent);
-    return TabsComponent;
+    ], FooterComponent);
+    return FooterComponent;
 }());
-exports.TabsComponent = TabsComponent;
-//# sourceMappingURL=tabs.component.js.map
+exports.FooterComponent = FooterComponent;
+//# sourceMappingURL=footer.component.js.map

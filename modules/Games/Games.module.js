@@ -16,11 +16,13 @@ var GamesModule = (function () {
     function GamesModule(route, propertyGetter) {
         this.propertyGetter = propertyGetter;
         this.games = null;
+        this.tabs = null;
         this.selectedOption = 1;
         this.game = myGlobal.selectedGame;
         this.router = route;
         this.CheckIsLogin();
         this.games = propertyGetter.getConsoleGames();
+        this.tabs = propertyGetter.getTabs();
     }
     GamesModule.prototype.OnTabSelect = function (option) {
         this.selectedOption = option;

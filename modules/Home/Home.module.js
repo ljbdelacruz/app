@@ -9,15 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var PropertyGetter_method_1 = require('./../../services/methods/PropertyGetter.method');
 var HomeModule = (function () {
-    function HomeModule() {
+    function HomeModule(propertyGetter) {
+        this.propertyGetter = propertyGetter;
+        this.tabs = null;
+        this.tabs = propertyGetter.getTabs();
     }
+    HomeModule.prototype.checkOptionSelected = function (option) {
+        alert(option);
+    };
     HomeModule = __decorate([
         core_1.Component({
             selector: 'home-module',
             templateUrl: 'app/modules/Home/Home.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [PropertyGetter_method_1.PropertyGetter])
     ], HomeModule);
     return HomeModule;
 }());

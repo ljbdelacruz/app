@@ -19,4 +19,6 @@ export class GamesListComponent {
     Refresh():void{
         alert("Shitty");
     }
+    
+
 }

@@ -9,12 +9,12 @@ exports.t3dsGames = [{ id: 1, title: 'Pokemon X', link: [], image: [{ src: 'http
 //psp games data
 exports.psp = [{ id: 1, title: 'Final Fantasy Tactics', link: [], image: [{ src: 'http://vignette1.wikia.nocookie.net/finalfantasy/images/6/67/Dark_knight_fft.jpg/revision/latest?cb=20130808001059' }, { src: 'http://199.101.98.242/media/images/157288-Final_Fantasy_Tactics_-_The_War_of_the_Lions_(Europe)-3.jpg' }], imageCover: "http://vignette1.wikia.nocookie.net/finalfantasy/images/2/21/Fftlwnacover.jpg/revision/latest/top-crop/width/320/height/320?cb=20071230153304", description: 'Hi' }];
 //platforms data
-exports.platform = [{ id: 1, title: 'PS VITA', games: exports.psv, options: 1 }, { id: 2, title: '3DS', games: exports.t3dsGames, options: 2 }, { id: 3, title: 'PSP', games: exports.psp, options: 3 }];
+exports.platform = [{ id: 1, title: 'PSP', games: exports.psp, options: 1 }, { id: 2, title: 'PS VITA', games: exports.psv, options: 2 }, { id: 3, title: '3DS', games: exports.t3dsGames, options: 3 }];
 //tabs data - no use in a meantime trying to find its use
 exports.tabsTutorial = [{ id: 1, title: 'PSP', link: 'psp', options: 1 },
     { id: 2, title: 'PS VITA', link: 'psp', options: 2 },
     { id: 3, title: '3DS', link: '3ds', options: 3 }];
 //navigation item data
 exports.navItems = [{ id: 1, label: 'Home', link: '/home' },
-    { id: 2, label: 'About Us', link: '/aboutus' }];
+    { id: 2, label: 'About', link: '/aboutus' }];
 //# sourceMappingURL=datas.data.js.map

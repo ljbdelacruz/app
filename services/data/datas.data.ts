@@ -14,7 +14,7 @@ export const psp:Games[]=
 [{id:1, title:'Final Fantasy Tactics', link:[], image:[{src:'http://vignette1.wikia.nocookie.net/finalfantasy/images/6/67/Dark_knight_fft.jpg/revision/latest?cb=20130808001059'}, {src:'http://199.101.98.242/media/images/157288-Final_Fantasy_Tactics_-_The_War_of_the_Lions_(Europe)-3.jpg'}], imageCover:"http://vignette1.wikia.nocookie.net/finalfantasy/images/2/21/Fftlwnacover.jpg/revision/latest/top-crop/width/320/height/320?cb=20071230153304", description:'Hi'}];
 //platforms data
 export const platform:Consoles[]=
-[{id:1, title:'PS VITA', games:psv, options:1}, {id:2, title:'3DS', games:t3dsGames, options:2}, {id:3, title:'PSP', games:psp, options:3}];
+[{id:1, title:'PSP', games:psp, options:1}, {id:2, title:'PS VITA', games:psv, options:2}, {id:3, title:'3DS', games:t3dsGames, options:3}];
 //tabs data - no use in a meantime trying to find its use
 export const tabsTutorial:Tabs[]=
 [{id:1, title:'PSP', link:'psp', options:1},
@@ -23,4 +23,4 @@ export const tabsTutorial:Tabs[]=
 //navigation item data
 export const navItems:NavigationItem[]=
 [{id:1, label:'Home', link:'/home'},
- {id:2, label:'About Us', link:'/aboutus'}];
+ {id:2, label:'About', link:'/aboutus'}];
