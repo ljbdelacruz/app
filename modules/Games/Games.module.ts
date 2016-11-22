@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterModule,  Router, ActivatedRoute, Params} from '@angular/router';
+
 import {Games, Consoles, Tabs} from './../../objects/class.object';
 import {PropertyGetter} from './../../services/methods/PropertyGetter.method';
 import myGlobal = require('./../../services/properties/globals.properties');

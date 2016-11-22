@@ -1,14 +1,18 @@
 <div>
     <h1>This is Tutorial Module</h1>
-    <tabs-component [tabs]="" (selectedTabs)="ChangeOption($event)"></tabs-component>
+    <tabs-component [tabs]="tabs" (selectedTabs)="ChangeOption($event)"></tabs-component>
     <table>
         <tr>
-            <td *ngIf="seletedOption==1">
-                <h1>PSP</h1>
+            <td *ngIf="selectedOption==1">
+                <tutorial-component [tutorialSelected]="1"></tutorial-component>
             </td>
-            <td *ngIf="seletedOption==1">
-                <h1>PSP</h1>
+            <td *ngIf="selectedOption==2">
+                <tutorial-component [tutorialSelected]="2"></tutorial-component>
+            </td>
+            <td *ngIf="selectedOption==3">
+                <tutorial-component [tutorialSelected]="3"></tutorial-component>
             </td>
         </tr>
     </table>
+    
 </div>

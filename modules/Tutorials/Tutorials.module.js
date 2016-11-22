@@ -10,14 +10,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var PropertyGetter_method_1 = require('./../../services/methods/PropertyGetter.method');
 var TutorialsModule = (function () {
-    function TutorialsModule(route) {
+    function TutorialsModule(route, propertyGetter) {
+        this.propertyGetter = propertyGetter;
         this.selectedOption = 1;
-        this.RequestHttpData();
+        this.tabs = null;
+        this.tabs = propertyGetter.getTabs();
     }
-    TutorialsModule.prototype.RequestHttpData = function () {
-        alert("Welcome Tutorial");
-    };
     TutorialsModule.prototype.ChangeOption = function (option) {
         this.selectedOption = option;
     };
@@ -26,7 +26,7 @@ var TutorialsModule = (function () {
             selector: 'tutorial-module',
             templateUrl: 'app/modules/Tutorials/Tutorials.html'
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [router_1.Router, PropertyGetter_method_1.PropertyGetter])
     ], TutorialsModule);
     return TutorialsModule;
 }());

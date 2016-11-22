@@ -12,6 +12,7 @@ import {GamesListComponent} from './components/GamesList/GamesList.component';
 import {GameDescriptionComponent} from './components/GameDescription/GameDescription.component';
 import {TabsComponent} from './components/tabs/tabs.component';
 import {FooterComponent} from './components/footer/footer.component';
+import {TutorialsComponent} from './components/tutorials/tutorials.component'; 
 //modules
 import {HomeModule} from './modules/Home/Home.module';
 import {AboutUsModule} from './modules/AboutUs/AboutUs.module';
@@ -43,6 +44,7 @@ import {Routes} from './services/properties/Routings.properties';
     GameDescriptionComponent,
     TabsComponent,
     FooterComponent,
+    TutorialsComponent,
     /*Modules*/
     HomeModule,
     AboutUsModule,

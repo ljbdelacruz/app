@@ -22,6 +22,7 @@ var GamesList_component_1 = require('./components/GamesList/GamesList.component'
 var GameDescription_component_1 = require('./components/GameDescription/GameDescription.component');
 var tabs_component_1 = require('./components/tabs/tabs.component');
 var footer_component_1 = require('./components/footer/footer.component');
+var tutorials_component_1 = require('./components/tutorials/tutorials.component');
 //modules
 var Home_module_1 = require('./modules/Home/Home.module');
 var AboutUs_module_1 = require('./modules/AboutUs/AboutUs.module');
@@ -53,6 +54,7 @@ var AppModule = (function () {
                 GameDescription_component_1.GameDescriptionComponent,
                 tabs_component_1.TabsComponent,
                 footer_component_1.FooterComponent,
+                tutorials_component_1.TutorialsComponent,
                 /*Modules*/
                 Home_module_1.HomeModule,
                 AboutUs_module_1.AboutUsModule,
