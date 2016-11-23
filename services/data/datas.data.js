@@ -14,6 +14,10 @@ exports.platform = [{ id: 1, title: 'PSP', games: exports.psp, options: 1 }, { i
 exports.tabsTutorial = [{ id: 1, title: 'PSP', link: 'psp', options: 1 },
     { id: 2, title: 'PS VITA', link: 'psp', options: 2 },
     { id: 3, title: '3DS', link: '3ds', options: 3 }];
+exports.tabsPSPTutorial = [{ id: 1, title: 'VHBL', link: 'psp', options: 1 },
+    { id: 2, title: 'CFW', link: 'psp', options: 2 }];
+exports.tabsPSVTutorial = [{ id: 1, title: 'Henkaku', link: 'psp', options: 1 },
+    { id: 2, title: 'Taihenkaku', link: 'psp', options: 2 }];
 //navigation item data
 exports.navItems = [{ id: 1, label: 'Home', link: '/home' },
     { id: 2, label: 'About', link: '/aboutus' },

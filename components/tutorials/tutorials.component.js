@@ -9,9 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var PropertyGetter_method_1 = require('./../../services/methods/PropertyGetter.method');
 var TutorialsComponent = (function () {
-    function TutorialsComponent() {
+    function TutorialsComponent(propertyGetter) {
+        this.propertyGetter = propertyGetter;
+        this.tabsPSPTutorial = null;
+        this.optionSelectedPSP = 1;
+        this.tabsPSVTutorial = null;
+        this.optionSelectedPSV = 1;
+        this.tabsPSPTutorial = propertyGetter.GetTabsPSPTutorial();
+        this.tabsPSVTutorial = propertyGetter.GetTabsPSVTutorial();
     }
+    TutorialsComponent.prototype.onSelectOptionPSP = function (option) {
+        this.optionSelectedPSP = option;
+        alert("PSP Option " + this.optionSelectedPSP);
+    };
+    TutorialsComponent.prototype.onSelectOptionPSV = function (option) {
+        this.optionSelectedPSV = option;
+        alert("PSV Option " + this.optionSelectedPSV);
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Number)
@@ -21,7 +37,7 @@ var TutorialsComponent = (function () {
             selector: 'tutorial-component',
             templateUrl: 'app/components/tutorials/tutorials.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [PropertyGetter_method_1.PropertyGetter])
     ], TutorialsComponent);
     return TutorialsComponent;
 }());

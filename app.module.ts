@@ -19,6 +19,7 @@ import {AboutUsModule} from './modules/AboutUs/AboutUs.module';
 import {LoginModule} from './modules/Login/Login.module';
 import {GamesModule} from './modules/Games/Games.module';
 import {TutorialsModule} from './modules/Tutorials/Tutorials.module';
+import {CommunityModule} from './modules/Community/community.module';
 //services
 import {PropertyGetter} from './services/methods/PropertyGetter.method';
 import {Routes} from './services/properties/Routings.properties';
@@ -50,7 +51,8 @@ import {Routes} from './services/properties/Routings.properties';
     AboutUsModule,
     LoginModule,
     GamesModule,
-    TutorialsModule
+    TutorialsModule,
+    CommunityModule
   ],
   providers: [
      PropertyGetter

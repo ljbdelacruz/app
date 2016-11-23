@@ -13,6 +13,12 @@ export class Link{
 }
 export class Thumbnail{
   src:string;
+ //planning to add this to thumbnail attributes 
+ //so it can dictates its width and height and other styles
+//  width:number;
+//  height:number;
+//  class:string;
+//  
 }
 export class NavigationItem{
   id:number;
@@ -31,5 +37,39 @@ export class Consoles{
   games:Games[];
   options:number;
 }
+//users
+export class Registration{
+  id:number; 
+  username:string;
+  password:string;
+  user:UserInformation;
+}
+export class UserInformation{
+  id:number;
+  firstname:string;
+  middlename:string;
+  lastname:string;
+  address:string;
+  gender:string;
+  language:Language;
+}
+export class Language{
+  id:number;
+  name:string;
+  description:string;
+}
+export class Item{
+  id:number;
+  name:string;
+  quantity:number;
+  description:string;
+  images:Thumbnail[];
+  imageCover:string;
+}
+
+export class OrderNumber{
+  id:number;
+}
+
 
 

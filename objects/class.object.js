@@ -36,4 +36,35 @@ var Consoles = (function () {
     return Consoles;
 }());
 exports.Consoles = Consoles;
+//users
+var Registration = (function () {
+    function Registration() {
+    }
+    return Registration;
+}());
+exports.Registration = Registration;
+var UserInformation = (function () {
+    function UserInformation() {
+    }
+    return UserInformation;
+}());
+exports.UserInformation = UserInformation;
+var Language = (function () {
+    function Language() {
+    }
+    return Language;
+}());
+exports.Language = Language;
+var Item = (function () {
+    function Item() {
+    }
+    return Item;
+}());
+exports.Item = Item;
+var OrderNumber = (function () {
+    function OrderNumber() {
+    }
+    return OrderNumber;
+}());
+exports.OrderNumber = OrderNumber;
 //# sourceMappingURL=class.object.js.map

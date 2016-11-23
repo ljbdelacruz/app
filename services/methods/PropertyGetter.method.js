@@ -33,6 +33,12 @@ var PropertyGetter = (function () {
     PropertyGetter.prototype.getConsoleGames = function () {
         return datas_data_1.platform;
     };
+    PropertyGetter.prototype.GetTabsPSPTutorial = function () {
+        return datas_data_1.tabsPSPTutorial;
+    };
+    PropertyGetter.prototype.GetTabsPSVTutorial = function () {
+        return datas_data_1.tabsPSVTutorial;
+    };
     PropertyGetter = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])

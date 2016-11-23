@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {NavigationItem, Tabs, Games, Consoles} from './../../objects/class.object';
-import {navItems, tabsTutorial, platform, psv, psp, t3dsGames} from './../../services/data/datas.data';
+import {navItems, tabsTutorial, platform, psv, psp, t3dsGames, tabsPSPTutorial, tabsPSVTutorial} from './../../services/data/datas.data';
 
 
 //this method service is for getting data from service properties
@@ -25,5 +25,10 @@ export class PropertyGetter {
   getConsoleGames():Consoles[]{
     return platform;
   }
-
+  GetTabsPSPTutorial():Tabs[]{
+    return tabsPSPTutorial
+  }
+  GetTabsPSVTutorial():Tabs[]{
+    return tabsPSVTutorial
+  }
 }

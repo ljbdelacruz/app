@@ -29,6 +29,7 @@ var AboutUs_module_1 = require('./modules/AboutUs/AboutUs.module');
 var Login_module_1 = require('./modules/Login/Login.module');
 var Games_module_1 = require('./modules/Games/Games.module');
 var Tutorials_module_1 = require('./modules/Tutorials/Tutorials.module');
+var community_module_1 = require('./modules/Community/community.module');
 //services
 var PropertyGetter_method_1 = require('./services/methods/PropertyGetter.method');
 var Routings_properties_1 = require('./services/properties/Routings.properties');
@@ -60,7 +61,8 @@ var AppModule = (function () {
                 AboutUs_module_1.AboutUsModule,
                 Login_module_1.LoginModule,
                 Games_module_1.GamesModule,
-                Tutorials_module_1.TutorialsModule
+                Tutorials_module_1.TutorialsModule,
+                community_module_1.CommunityModule
             ],
             providers: [
                 PropertyGetter_method_1.PropertyGetter
