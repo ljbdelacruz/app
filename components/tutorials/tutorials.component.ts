@@ -15,7 +15,7 @@ export class TutorialsComponent {
     optionSelectedPSP=1;
     tabsPSVTutorial:Tabs[]=null;
     optionSelectedPSV=1;
-
+    
     constructor(private propertyGetter:PropertyGetter){
       this.tabsPSPTutorial=propertyGetter.GetTabsPSPTutorial();
       this.tabsPSVTutorial=propertyGetter.GetTabsPSVTutorial();

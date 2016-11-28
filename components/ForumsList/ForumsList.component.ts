@@ -11,5 +11,8 @@ import {Tabs} from './../../objects/class.object';
 
 //this is the main class 
 export class ForumListComponent {
-//    @Input() list:Forums[];
+  //@Input() list:Forums[];
 }
+
+
+
