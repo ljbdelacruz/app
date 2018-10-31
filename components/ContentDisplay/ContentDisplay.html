@@ -1,0 +1,25 @@
+<div>
+    <h1>Content Display</h1>
+    <table>
+        <tr>
+            <td>
+                <h2>{{title}}</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="{{mainImage.source}}" />
+            </td>
+            <td>
+                <p>{{content}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td *ngFor="let item of images">
+                <img src="{{item.source}}" style="width:{{item.width}}; height:{{item.height}}" />
+            </td>
+        </tr>
+    </table>
+
+</div>
+

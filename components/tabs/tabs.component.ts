@@ -6,7 +6,7 @@ import {Tabs} from './../../objects/class.object';
   selector: 'tabs-component',
   templateUrl:'app/components/tabs/tabs.html'
 })
-//this is the main class 
+//this is the main class
 export class TabsComponent {
     @Input() tabs:Tabs[];
     @Output() selectedTabs=new EventEmitter<number>();
